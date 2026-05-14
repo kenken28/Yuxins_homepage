@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yuxin Xu personal homepage and wildlife photography.">
+    <title>Yuxin Xu | Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header class="site-header" data-theme="over-image">
+      <a class="brand" href="#top" aria-label="Yuxin Xu home">YX</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#work" data-i18n="nav_work">Work</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#lens" data-i18n="nav_lens">Lens</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <button class="lang-toggle" type="button" aria-label="Switch language">
+        <span data-lang-label>中文</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="resources/imgs/optimized/hero-sunset.webp" alt="A warm sunset over an African landscape photographed by Yuxin Xu">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Personal homepage / wildlife field notes</p>
+          <h1 id="hero-title">
+            <span data-i18n="hero_title_line1">builds with code, observes with a lens.</span>
+          </h1>
+          <p class="hero-summary" data-i18n="hero_summary">
+            A quiet digital space for a concise introduction, selected interests, and photographs from the field.
+          </p>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="intro section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-index reveal">01</div>
+        <div class="intro-grid">
+          <div class="intro-title reveal">
+            <p class="eyebrow" data-i18n="about_eyebrow">Introduction</p>
+            <h2 id="about-title" data-i18n="about_title">I work between deep learning, AI-assisted drug design, and software systems.</h2>
+          </div>
+          <div class="intro-side">
+            <figure class="portrait reveal">
+              <img src="resources/imgs/optimized/me-portrait.webp" alt="Portrait of Yuxin Xu">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section-pad" id="work" aria-labelledby="work-title">
+        <div class="section-index reveal">02</div>
+        <div class="work-grid">
+          <div class="work-copy reveal">
+            <p class="eyebrow" data-i18n="work_eyebrow">Current Work</p>
+            <h2 id="work-title" data-i18n="work_title">Algorithm Engineer at Hangzhou Institute of Medicine, CAS.</h2>
+            <p data-i18n="work_body">
+              I currently work at the Hangzhou Institute of Medicine, Chinese Academy of Sciences, where I design deep learning models for antimicrobial peptide generation, molecular affinity prediction, and related biomolecular modeling tasks.
+            </p>
+            <ul class="work-meta" aria-label="Current work details">
+              <li data-i18n="work_meta_1">Hangzhou, China</li>
+              <li data-i18n="work_meta_2">Algorithm Engineer</li>
+              <li data-i18n="work_meta_3">AI-assisted drug design</li>
+              <li data-i18n="work_meta_4">Nov 2023 - Present</li>
+            </ul>
+          </div>
+          <div class="molecule-visual reveal" aria-hidden="true">
+            <span class="orbit orbit-a"></span>
+            <span class="orbit orbit-b"></span>
+            <span class="node node-a"></span>
+            <span class="node node-b"></span>
+            <span class="node node-c"></span>
+            <span class="node node-d"></span>
+            <span class="model-label">CAS / HIM</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-index reveal">03</div>
+        <div class="projects-heading reveal">
+          <p class="eyebrow" data-i18n="projects_eyebrow">Selected Projects</p>
+          <h2 id="projects-title" data-i18n="projects_title">Two projects at the edge of molecules, signals, and models.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-visual peptide-visual" aria-hidden="true">
+              <div class="peptide-chain">
+                <span>A</span><span>M</span><span>P</span><span>K</span><span>L</span><span>R</span><span>V</span><span>G</span>
+              </div>
+              <div class="helix-line"></div>
+            </div>
+            <div class="project-copy">
+              <p class="project-org" data-i18n="project_amp_org">Hangzhou Institute of Medicine, CAS</p>
+              <h3 data-i18n="project_amp_title">Antimicrobial Peptide Generation</h3>
+              <p data-i18n="project_amp_body">
+                A generative model for antimicrobial peptide sequences, built with PyTorch, diffusion modeling, and protein language model representations. My work focused on designing and implementing conditional peptide sequence generation.
+              </p>
+              <div class="tag-row">
+                <span data-i18n="project_amp_tag_1">PyTorch</span>
+                <span data-i18n="project_amp_tag_2">Diffusion Model</span>
+                <span data-i18n="project_amp_tag_3">Protein Language Model</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual signal-visual" aria-hidden="true">
+              <svg viewBox="0 0 360 180" role="img">
+                <path class="signal-grid" d="M20 45H340M20 90H340M20 135H340"></path>
+                <path class="signal-trace" d="M20 92 C45 35, 58 145, 82 82 S124 30, 148 98 S194 148, 216 76 S260 38, 286 104 S322 132, 340 74"></path>
+              </svg>
+              <div class="base-stream">
+                <span>A</span><span>C</span><span>G</span><span>T</span><span>G</span><span>A</span>
+              </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-org" data-i18n="project_nanopore_org">BGI / CycloneSEQ Sequencer</p>
+              <h3 data-i18n="project_nanopore_title">Nanopore Sequencing System</h3>
+              <p data-i18n="project_nanopore_body">
+                A system for converting nanopore current signals into DNA base sequences. My work included neural network classification, signal feature analysis, and labeling workflow design for raw nanopore signals.
+              </p>
+              <div class="tag-row">
+                <span data-i18n="project_nanopore_tag_1">TensorFlow</span>
+                <span data-i18n="project_nanopore_tag_2">Signal Analysis</span>
+                <span data-i18n="project_nanopore_tag_3">Label Studio</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Design keywords">
+        <div class="marquee-track">
+          <span data-i18n="marquee">minimal / bilingual / computational / photographic / restrained motion / field observation /</span>
+          <span data-i18n="marquee">minimal / bilingual / computational / photographic / restrained motion / field observation /</span>
+        </div>
+      </section>
+
+      <section class="lens section-pad" id="lens" aria-labelledby="lens-title">
+        <div class="section-index reveal">04</div>
+        <div class="lens-heading reveal">
+          <p class="eyebrow" data-i18n="lens_eyebrow">Wildlife Photography</p>
+          <h2 id="lens-title" data-i18n="lens_title_1">African wildlife,</h2>
+          <h2 data-i18n="lens_title_2">framed as quiet encounters.</h2>
+        </div>
+
+        <div class="photo-stage reveal" data-photo-stage>
+          <button class="stage-button previous" type="button" aria-label="Previous photograph">Prev</button>
+          <figure class="stage-frame">
+            <img src="resources/imgs/optimized/zebras.webp" alt="Zebras in golden grass photographed by Yuxin Xu" data-stage-image>
+            <figcaption>
+              <span data-stage-count>01 / 04</span>
+              <span data-stage-title data-i18n="photo_zebras">Stripe rhythm</span>
+            </figcaption>
+          </figure>
+          <button class="stage-button next" type="button" aria-label="Next photograph">Next</button>
+        </div>
+
+        <div class="photo-grid" aria-label="Selected wildlife photographs">
+          <button class="photo-tile active reveal" type="button" data-photo="0">
+            <img src="resources/imgs/optimized/zebras.webp" alt="Zebras in golden grass">
+            <span data-i18n="photo_zebras">Stripe rhythm</span>
+          </button>
+          <button class="photo-tile reveal" type="button" data-photo="1">
+            <img src="resources/imgs/optimized/pelican.webp" alt="Pelican by the water">
+            <span data-i18n="photo_pelican">Pelican line</span>
+          </button>
+          <button class="photo-tile reveal" type="button" data-photo="2">
+            <img src="resources/imgs/optimized/lizard.webp" alt="Colorful lizard on red earth">
+            <span data-i18n="photo_lizard">Ground color</span>
+          </button>
+          <button class="photo-tile reveal" type="button" data-photo="3">
+            <img src="resources/imgs/optimized/buffalo.webp" alt="African buffalo">
+            <span data-i18n="photo_buffalo">Buffalo stare</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="section-index reveal">05</div>
+        <div class="contact-inner reveal">
+          <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+          <h2 id="contact-title" data-i18n="contact_title">For collaboration or conversation, reach out here.</h2>
+          <dl class="contact-list">
+            <div>
+              <dt data-i18n="contact_email">Email</dt>
+              <dd>
+                <a href="mailto:xuyuxin28@gmail.com">xuyuxin28@gmail.com</a>
+                <a href="mailto:xuyuxin@him.cas.cn">xuyuxin@him.cas.cn</a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> Yuxin Xu</span>
+      <span data-i18n="footer_note">Built as a static GitHub Pages site.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
